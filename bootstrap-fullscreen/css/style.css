@@ -18,11 +18,15 @@ img{
 
 .list-group
 {
-
-  padding:10px 10px;
+	
+  padding:20px 20px;
   position: relative;
 }
 .list-group-item{
+	width: 30%;
+	height: 100%;
+    line-height:100%;
+    vertical-align: middle;
 	background:#FF6600;
 	color:#ffffff;
 	border: 1px solid #000000;
@@ -30,10 +34,10 @@ img{
 }
 
 .block{
-	font-color:#ffffff; 
+	color:#ffffff; 
 	font-size:28px;
 	z-index:1;
-	top:40px;
+	top:60px;
 	position:relative;
 	transform: rotate(-90deg);
 
@@ -45,11 +49,11 @@ img{
 
 .inside img {
 	position:relative;
-	width:50px;
-	height:50px;
-	margin-top: 10px;
+	width:40px;
+	height:40px;
+
 	margin-bottom: 10px;
-	margin-left: 10px;
+	margin-left: 20px;
 	margin-right: 15px;
 	z-index:2;
 	
@@ -57,7 +61,8 @@ img{
 
 @media only screen and (max-width: 1200px){
 
-.list-group-item{font-size: 14px;}
+.list-group-item{width: 30%;
+	height: 100%;font-size: 14px;}
 .list-group
 {
   justify-content: center;
@@ -101,6 +106,8 @@ img{
  @media only screen and (max-width: 992px){
 
 .list-group-item{
+	width: 30%;
+	height: 100%;
 	font-size: 11px;
 }
 .list-group
@@ -110,7 +117,7 @@ img{
   position: relative;
 }
 .block{
-	
+	position:relative;
 	font-size:20px;
 	top:30px;
 
@@ -137,7 +144,8 @@ img{
  @media only screen and (max-width: 768px){
 
 .list-group-item{
-	
+	width: 30%;
+	height: 10%;
 	font-size: 9px;
 
  }
@@ -149,9 +157,10 @@ img{
   position: relative;
 }
 .block{
-
+	left:10px;
+	position:relative;
 	font-size:17px;
-	top:20px;
+	top:30px;
 	
 
 }
@@ -177,6 +186,8 @@ img{
  @media only screen and (max-width: 662px){
 
 .list-group-item{
+	width: 30%;
+	height: 10%;
 	font-size:9px;
 	
 }
@@ -189,9 +200,10 @@ img{
 }
 
 .block{
-	
+	left:15px;
+	position:relative;
 	font-size:14px;
-	top:10px;
+	top:30px;
 }
 
 .div1 .inside {
@@ -207,7 +219,7 @@ img{
 	height:25px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	margin-left: 0px;
+	margin-left: 5px;
 	margin-right: 0px;
 }
 
