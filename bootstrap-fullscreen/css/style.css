@@ -19,7 +19,11 @@ text-align:center;
 html,body{height:100%;
  background-image: url("../img/bg.jpg");}
 
-.main-wrapper {
+
+ .hideMe {
+    display: none;
+}
+ .main-wrapper {
   height: 100vh; 
   padding:10px 10px 10px 10px  ;
   display: flex;

@@ -24,13 +24,13 @@
 		
 		 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1">
             <div class="list-group h-50">
-			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building1" data-toggle="popover" data-trigger="focus" href="#" data-trigger="hover">1</a>
-			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building2" data-toggle="popover" data-trigger="focus" href="#" data-trigger="hover">2</a>
-			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building3" data-toggle="popover" data-trigger="focus" href="#" data-trigger="hover">3</a>
-			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building4" data-toggle="popover" data-trigger="focus" href="#" data-trigger="hover">4</a>
-			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building5" data-toggle="popover" data-trigger="focus" href="#" data-trigger="hover">5</a>
-			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building6" data-toggle="popover" data-trigger="focus" href="#" data-trigger="hover">6</a>
-			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building7" data-toggle="popover" data-trigger="focus" href="#" data-trigger="hover">7</a>
+			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building1" data-toggle="popover"  data-trigger="hover">1</a>
+			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building2" data-toggle="popover"  data-trigger="hover">2</a>
+			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building3" data-toggle="popover"  data-trigger="hover">3</a>
+			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building4" data-toggle="popover"  data-trigger="hover">4</a>
+			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building5" data-toggle="popover"  data-trigger="hover">5</a>
+			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building6" data-toggle="popover"  data-trigger="hover">6</a>
+			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building7" data-toggle="popover"  data-trigger="hover">7</a>
 
 		    </div>
 			<div class="list-group h-25">
@@ -540,12 +540,13 @@ function drawRect(coOrdStr)
 //hover in map area
 function myHover(element)
 {
-	//console.log("hover");
-	
+
+		
+
 	//alert("Hover"+element.id);
 	$("#building"+element.id).css("background-color", "#ffffff");
 	$("#building"+element.id).css("color", "#000");
-	 $('#building'+element.id).show();
+	$('#building'+element.id).show();
     var hoveredElement = element;
     var coordStr = element.getAttribute('coords');
     var areaType = element.getAttribute('shape');
