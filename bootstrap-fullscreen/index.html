@@ -17,28 +17,30 @@
 </head>
 
 <body>
-<div class="container-fluid">
+ <div class="main-wrapper">
 	
-        <div class="row">
+        <div class="row w-100">
+		
 		 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1">
             <div class="list-group h-50">
-			  <a href="#" class="list-group-item list-group-item-action">1</a>
-			  <a href="#" class="list-group-item list-group-item-action">2</a>
-			  <a href="#" class="list-group-item list-group-item-action">3</a>
-			  <a href="#" class="list-group-item list-group-item-action">4</a>
-			  <a href="#" class="list-group-item list-group-item-action">5</a>
-			  <a href="#" class="list-group-item list-group-item-action">6</a>
-			  <a href="#" class="list-group-item list-group-item-action">7</a>
+			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building1" data-toggle="popover" data-trigger="focus" href="#" data-trigger="hover">1</a>
+			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building2" data-toggle="popover" data-trigger="focus" href="#" data-trigger="hover">2</a>
+			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building3" data-toggle="popover" data-trigger="focus" href="#" data-trigger="hover">3</a>
+			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building4" data-toggle="popover" data-trigger="focus" href="#" data-trigger="hover">4</a>
+			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building5" data-toggle="popover" data-trigger="focus" href="#" data-trigger="hover">5</a>
+			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building6" data-toggle="popover" data-trigger="focus" href="#" data-trigger="hover">6</a>
+			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building7" data-toggle="popover" data-trigger="focus" href="#" data-trigger="hover">7</a>
+
 		    </div>
 			<div class="list-group h-25">
 			  <p class="block">BLOCKS</p>
 		
 		    </div>
 	
-			<div class="inside h-25">
+			<div class=" inside fixed-bottom">
 			
 			
-					<img src="img/funnel.png" data-toggle="modal" data-target="#largeModal" >
+					<img src="img/funnel.png" data-toggle="modal" data-target="#largeModal"  >
 			</div>
 				
 	
@@ -46,18 +48,176 @@
 		
           </div>
             <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
-             
-                    <img src="img/s0.png"/ >
+             <div  id="demo" class="carousel slide" data-ride="carousel" style="display:none;" >
+				
+							  <!-- Indicators -->
+							  <ul class="carousel-indicators">
+								<li data-target="#demo" data-slide-to="0" class="active" ></li>
+								<li data-target="#demo" data-slide-to="1"></li>
+								<li data-target="#demo" data-slide-to="2"></li>
+								<li data-target="#demo" data-slide-to="3"></li>
+								<li data-target="#demo" data-slide-to="4"></li>
+								<li data-target="#demo" data-slide-to="5"></li>
+							  </ul>
+							  
+							  <!-- The slideshow -->
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="img/guide/01.jpg" alt="01" width="100%" height="100%" >
+								</div>
+								<div class="carousel-item">
+								  <img src="img/guide/02.jpg" alt="02" >
+								</div>
+								<div class="carousel-item">
+								  <img src="img/guide/03.jpg" alt="03" >
+								</div>
+								 <div class="carousel-item">
+								  <img src="img/guide/04.jpg" alt="04" >
+								</div>
+								 <div class="carousel-item">
+								  <img src="img/guide/05.jpg" alt="05" >
+								</div>
+								 <div class="carousel-item">
+								  <img src="img/guide/06.jpg" alt="06" width="1100" height="500">
+								</div>
+							  </div>
+  
+							  <!-- Left and right controls -->
+							  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							  </a>
+							  <a class="carousel-control-next" href="#demo" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							  </a>
+				</div>
+                    <img src="img/s0.png"/ class="main-img" >
              
             </div>
 			<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1">
-                       
-          </div>
+				<div class="list-group h-50">
+				  <a  class="close-slider" style="display:none;"></a>
+				</div>
+				<div class="list-group h-25">
+
+			
+				</div>
+		
+				<div class=" inside1">
+					<img src="img/funnel.png" id="slider" >
+				</div>
+			</div>
 		  
           
         </div>
 	
     </div>
+	
+<!-- Content for building #1 -->
+<div class="d-none" id="building1">
+  <div class="popover-heading">
+   BLOCK A
+  </div>
+
+  <div class="popover-body">
+   <table class="table table-bordered">
+<thead>
+<tr>
+<th>Header 1</th>
+<th>Header 2</th>
+<th>Header 3</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<th>Footer 1</th>
+<th>Footer 2</th>
+<th>Footer 3</th>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td>Cell</td>
+<td>Cell</td>
+<td>Cell</td>
+</tr>
+<tr>
+<td>Cell</td>
+<td>Cell</td>
+<td>Cell</td>
+</tr>
+<tr>
+<td>Cell</td>
+<td>Cell</td>
+<td>Cell</td>
+</tr>
+</tbody>
+</table>
+</div>
+  </div>
+</div>
+<!-- Content for building #2 -->
+
+<div class="d-none" id="building2">
+  <div class="popover-heading">
+    This is the heading for #1
+  </div>
+
+  <div class="popover-body">
+    This is the body for #1
+  </div>
+</div>
+
+<!-- Content for building #3 -->
+<div class="d-none" id="building3">
+  <div class="popover-heading">
+    This is the heading for #1
+  </div>
+
+  <div class="popover-body">
+    This is the body for #1
+  </div>
+</div>
+
+<!-- Content for building #4 -->
+<div class="d-none" id="building4">
+  <div class="popover-heading">
+    This is the heading for #1
+  </div>
+
+  <div class="popover-body">
+    This is the body for #1
+  </div>
+</div>
+<!-- Content for building #5 -->
+<div class="d-none" id="building5">
+  <div class="popover-heading">
+    This is the heading for #1
+  </div>
+
+  <div class="popover-body">
+    This is the body for #1
+  </div>
+</div>
+<!-- Content for building #6 -->
+<div class="d-none" id="building6">
+  <div class="popover-heading">
+    This is the heading for #1
+  </div>
+
+  <div class="popover-body">
+    This is the body for #1
+  </div>
+</div>	
+<!-- Content for building #7 -->
+<div class="d-none" id="building7">
+  <div class="popover-heading">
+    This is the heading for #1
+  </div>
+
+  <div class="popover-body">
+    This is the body for #1
+  </div>
+</div>	
 <!-- large modal -->
 <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
   <div class="modal-dialog modal-lg">
@@ -85,6 +245,46 @@
 
 
 
+
+
 </body>
+<script>
+$('#slider').on('click', function(){
+//$('#dispPackages').slideToggle('slow')   this will set display:block   
+$('#demo').slideToggle('slow');
+$(".close-slider").toggle();
+ //jQuery('.').css('opacity', '0.6');
+});
+
+$('.close-slider').on('click', function(){
+$("[id=demo]").hide();
+$("[class=close-slider]").hide();
+//console.log("clicked");
+});
+
+
+$(document).ready(function(){
+
+
+
+
+
+$(function(){
+    $("[data-toggle=popover]").popover({
+	trigger : 'hover',
+        html : true,
+        content: function() {
+          var content = $(this).attr("data-popover-content");
+          return $(content).children(".popover-body").html();
+        },
+        title: function() {
+          var title = $(this).attr("data-popover-content");
+          return $(title).children(".popover-heading").html();
+        }
+    });
+});
+
+});
+</script>
 
 </html>
