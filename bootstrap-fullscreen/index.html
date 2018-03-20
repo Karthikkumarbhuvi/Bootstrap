@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <title>Bootstrap Modal Fullscreen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 
       <link rel="stylesheet" href="css/style.css">
 
@@ -18,20 +19,19 @@
 
 <body onload='myInit()' onresize='myInit()'>
 <canvas id='myCanvas'></canvas> 
- <div class="main-wrapper">
+ <div class="main-wrapper" id="main-wrapper">
 	
         <div class="row w-100">
 		
 		 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1">
             <div class="list-group h-50">
-			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building1" data-toggle="popover"  data-trigger="hover">1</a>
-			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building2" data-toggle="popover"  data-trigger="hover">2</a>
-			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building3" data-toggle="popover"  data-trigger="hover">3</a>
-			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building4" data-toggle="popover"  data-trigger="hover">4</a>
-			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building5" data-toggle="popover"  data-trigger="hover">5</a>
-			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building6" data-toggle="popover"  data-trigger="hover">6</a>
-			 <a href="#" class="list-group-item list-group-item-action" data-popover-content="#building7" data-toggle="popover"  data-trigger="hover">7</a>
-
+			 <a  href="#1" id="hover1" onMouseOver="myHover1(this);" onmouseout='myLeave1(this);'   class="tip list-group-item " data-toggle="tooltip" data-placement="right" data-tip="building1" >1</a>
+			 <a  href="#2" id="hover2" onMouseOver="myHover1(this);" onmouseout='myLeave1(this);'   class="tip list-group-item " data-toggle="tooltip" data-placement="right" data-tip="building2" >2</a>
+			<a  href="#3" id="hover3" onMouseOver="myHover1(this);" onmouseout='myLeave1(this);'   class="tip list-group-item " data-toggle="tooltip" data-placement="right" data-tip="building3" >3</a>
+			<a  href="#4" id="hover4" onMouseOver="myHover1(this);" onmouseout='myLeave1(this);'   class="tip list-group-item " data-toggle="tooltip" data-placement="right" data-tip="building4" >4</a>
+			<a  href="#5" id="hover5" onMouseOver="myHover1(this);" onmouseout='myLeave1(this);'   class="tip list-group-item " data-toggle="tooltip" data-placement="right" data-tip="building5" >5</a>
+			<a  href="#6" id="hover6" onMouseOver="myHover1(this);" onmouseout='myLeave1(this);'   class="tip list-group-item " data-toggle="tooltip" data-placement="right" data-tip="building6" >6</a>
+			<a  href="#7" id="hover7" onMouseOver="myHover1(this);" onmouseout='myLeave1(this);'   class="tip list-group-item " data-toggle="tooltip" data-placement="right" data-tip="building7" >7</a>
 		    </div>
 			<div class="list-group h-25">
 			  <p class="block">BLOCKS</p>
@@ -42,16 +42,53 @@
 			
 			
 					<img src="img/funnel.png" data-toggle="modal" data-target="#largeModal"  >
+					
 			</div>
 				
 
 					
 		
-          </div>
-            <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
+         </div>
+            <div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11">
              
-        <!-- slider start -->
-<div  id="demo" class="carousel slide" data-ride="carousel" style="display:none;" >
+
+					<img src="img/s0.png" class="main-img" id="img-imgmap201293016112"  usemap="#powerpuffgirls"  />
+							<div class="copy-right-txt">Design Patent & Copyright &copy; 2018 protected.&nbsp; Focuzar All rights strictly Reserved</div>
+
+						<map name="powerpuffgirls">
+							<area id="1"  onMouseOver="myHover(this);" onmouseout='myLeave(this);' title="Block1"   coords="164,558,98,300,97,286,100,281,106,273,119,264,128,260,140,254,153,249,168,244,180,247,191,248,203,252,209,257,207,250,207,243,207,234,212,233,220,231,233,229,246,228,255,227,269,226,282,225,293,226,304,227,312,227,323,229,331,230,336,233,344,238,353,243,359,247,362,256,365,262,394,493,392,502,386,518,383,524,375,542,356,561,332,573,313,585,289,591,271,595,254,595,236,594,217,592,199,589,186,583,177,578,170,569" shape="poly">
+							<area  id="2" onMouseOver="myHover(this);" onmouseout='myLeave(this);' title="Block2"  coords="301,224,287,123,291,116,299,109,310,106,323,103,336,101,347,101,358,100,367,101,376,100,387,100,399,101,415,102,430,104,443,107,447,117,458,269,452,280,442,290,433,298,421,302,409,309,393,313,382,313,369,313,363,265,361,255,356,244,346,238,337,232,328,229,321,228,310,225" shape="poly">
+							<area  id="3" onMouseOver="myHover(this);" onmouseout='myLeave(this);' title="Block3"  coords="456,234,444,86,453,76,467,73,479,73,493,71,508,70,528,70,541,71,555,73,568,77,575,86,575,99,559,104,546,105,535,106,526,114,526,126,537,237,530,243,516,245,503,246,492,245,480,243,467,238" shape="poly">
+							<area  id="4" onMouseOver="myHover(this);" onmouseout='myLeave(this);' title="Block4"  coords="536,291,528,114,539,105,553,105,566,103,576,100,589,98,601,99,611,98,623,100,637,102,649,106,659,107,672,110,683,114,686,125,680,237,670,243,667,248,662,255,657,267,658,280,658,292,657,300,647,307,633,308,616,310,601,311,587,311,566,308,554,302"shape="poly">
+							<area  id="5" onMouseOver="myHover(this);" onmouseout='myLeave(this);' title="Block5"  coords="700,233,701,147,708,138,720,133,731,132,744,132,757,133,774,133,786,133,799,134,815,140,821,148,818,161,808,235,798,231,788,230,776,230,763,228,751,227,739,227,725,229,713,231" shape="poly">
+							<area  id="6"  onMouseOver="myHover(this);" onmouseout='myLeave(this);' title="Block6"  coords="1025,205,1023,215,986,398,983,410,978,417,974,425,968,434,959,440,946,443,933,444,917,448,902,449,888,448,871,443,896,278,895,268,889,258,875,252,867,245,853,240,842,238,823,234,820,195,824,185,828,179,837,171,844,169,852,167,865,168,879,170,888,173,897,172,901,167,915,164,935,165,951,168,970,171,989,177,1004,187,1017,194" shape="poly">
+							<area  id="7"  onMouseOver="myHover(this);" onmouseout='myLeave(this);' title="Block7" coords="650,522,657,276,656,265,660,255,666,246,678,242,687,240,700,235,717,232,738,230,757,229,774,228,792,231,815,234,834,239,851,242,864,247,886,258,893,274,894,285,858,538,853,545,844,549,830,556,823,559,813,562,802,570,790,571,773,575,755,575,739,572,726,569,708,559,693,554,679,547,667,543,657,534" shape="poly">
+						</map>
+						<div class="inside1">
+							<i class="fa fa-question-circle" id="myBtn" ></i>
+						</div>
+						
+							<div class="Focuz-logo">
+							<img src="img/powered.png" class="Focuz" alt=""/>
+				  
+							</div>
+
+					
+						
+            </div>
+			
+		  
+          
+        </div>
+	
+    </div>
+  <!-- Modal container it includes the overlay -->
+        <div id="myModal" class="Modal is-hidden is-visuallyHidden">
+            <!-- Modal content -->
+            <div class="Modal-content">
+                <span id="closeModal" class="Close">&times;</span>
+                        <!-- slider start -->
+					<div  id="demo" class="carousel slide" data-ride="carousel" >
 				
 							  <!-- Indicators -->
 							  <ul class="carousel-indicators">
@@ -92,343 +129,338 @@
 							  <a class="carousel-control-next" href="#demo" data-slide="next">
 								<span class="carousel-control-next-icon"></span>
 							  </a>
-				</div>
+					</div>
 <!-- slider end -->
-					<img src="img/s0.png" class="main-img" id="img-imgmap201293016112"  usemap="#powerpuffgirls"  />
-
-
-<map name="powerpuffgirls">
-	<area id="1" onMouseOver="myHover(this);" onmouseout='myLeave(this);' title="Block1"   coords="164,558,98,300,97,286,100,281,106,273,119,264,128,260,140,254,153,249,168,244,180,247,191,248,203,252,209,257,207,250,207,243,207,234,212,233,220,231,233,229,246,228,255,227,269,226,282,225,293,226,304,227,312,227,323,229,331,230,336,233,344,238,353,243,359,247,362,256,365,262,394,493,392,502,386,518,383,524,375,542,356,561,332,573,313,585,289,591,271,595,254,595,236,594,217,592,199,589,186,583,177,578,170,569" shape="poly">
-    <area  id="2" onMouseOver="myHover(this);" onmouseout='myLeave(this);' title="Block2"  coords="301,224,287,123,291,116,299,109,310,106,323,103,336,101,347,101,358,100,367,101,376,100,387,100,399,101,415,102,430,104,443,107,447,117,458,269,452,280,442,290,433,298,421,302,409,309,393,313,382,313,369,313,363,265,361,255,356,244,346,238,337,232,328,229,321,228,310,225" shape="poly">
-    <area  id="3" onMouseOver="myHover(this);" onmouseout='myLeave(this);' title="Block3"  coords="456,234,444,86,453,76,467,73,479,73,493,71,508,70,528,70,541,71,555,73,568,77,575,86,575,99,559,104,546,105,535,106,526,114,526,126,537,237,530,243,516,245,503,246,492,245,480,243,467,238" shape="poly">
-    <area  id="4" onMouseOver="myHover(this);" onmouseout='myLeave(this);' title="Block4"  coords="536,291,528,114,539,105,553,105,566,103,576,100,589,98,601,99,611,98,623,100,637,102,649,106,659,107,672,110,683,114,686,125,680,237,670,243,667,248,662,255,657,267,658,280,658,292,657,300,647,307,633,308,616,310,601,311,587,311,566,308,554,302"shape="poly">
-    <area  id="5" onMouseOver="myHover(this);" onmouseout='myLeave(this);' title="Block5"  coords="700,233,701,147,708,138,720,133,731,132,744,132,757,133,774,133,786,133,799,134,815,140,821,148,818,161,808,235,798,231,788,230,776,230,763,228,751,227,739,227,725,229,713,231" shape="poly">
-    <area id="6" onMouseOver="myHover(this);" onmouseout='myLeave(this);' title="Block6"  coords="1025,205,1023,215,986,398,983,410,978,417,974,425,968,434,959,440,946,443,933,444,917,448,902,449,888,448,871,443,896,278,895,268,889,258,875,252,867,245,853,240,842,238,823,234,820,195,824,185,828,179,837,171,844,169,852,167,865,168,879,170,888,173,897,172,901,167,915,164,935,165,951,168,970,171,989,177,1004,187,1017,194" shape="poly">
-    <area id="7" onMouseOver="myHover(this);" onmouseout='myLeave(this);' title="Block7" coords="650,522,657,276,656,265,660,255,666,246,678,242,687,240,700,235,717,232,738,230,757,229,774,228,792,231,815,234,834,239,851,242,864,247,886,258,893,274,894,285,858,538,853,545,844,549,830,556,823,559,813,562,802,570,790,571,773,575,755,575,739,572,726,569,708,559,693,554,679,547,667,543,657,534" shape="poly">
-</map>
             </div>
-			<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1">
-				<div class="list-group h-50">
-				  <a  class="close-slider" style="display:none;"></a>
-				</div>
-				<div class="list-group h-25">
-
-			
-				</div>
-		
-				<div class=" inside1">
-					<img src="img/funnel.png" id="slider" >
-				</div>
-			</div>
-		  
-          
-        </div>
-	
-    </div>
-	
+        </div>	
 <!-- Content for building #1 -->
-<div  class="d-none" id="building1">
-	<div class="popover-body">
-		<h5 id="popover-heading">BLOCK A</h5>
+
+<div class=" d-none"  id="building1">
+
+		<h5 id="popover-heading">BLOCK B</h5>
 		<h6 id="units">Total Units-128</h6>
-   <table class="table table-bordered" >
-		<thead>
-		<tr>
+	<table class="table table-responsive table-bordered">
+  <thead>
+    <tr>
 		<th>Size</th>
 		<th>Type</th>
 		<th>Flats</th>
+    </tr>
+  </thead>
+  <tbody>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
 		</tr>
-		</thead>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
+		</tr>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
+		</tr>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
+		</tr>
+  </tbody>
+</table>
 
-		<tbody>
-		<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-		<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-			<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-			<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-			<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-		</tbody>
-	</table>
-  </div>
 </div>
 
 <!-- Content for building #2 -->
 
 <div  class="d-none" id="building2">
-	<div class="popover-body">
-		<h5 id="popover-heading">BLOCK B</h5>
+	<h5 id="popover-heading">BLOCK B</h5>
 		<h6 id="units">Total Units-128</h6>
-   <table class="table table-bordered" >
-		<thead>
-		<tr>
+	<table class="table table-responsive table-bordered">
+  <thead>
+    <tr>
 		<th>Size</th>
 		<th>Type</th>
 		<th>Flats</th>
+    </tr>
+  </thead>
+  <tbody>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
 		</tr>
-		</thead>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
+		</tr>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
+		</tr>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
+		</tr>
+  </tbody>
+</table>
 
-		<tbody>
-		<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-		<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-			<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-			<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-			<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-		</tbody>
-	</table>
-  </div>
 </div>
 
 <!-- Content for building #3 -->
 <div  class="d-none" id="building3">
-	<div class="popover-body">
-		<h5 id="popover-heading">BLOCK C</h5>
+	<h5 id="popover-heading">BLOCK B</h5>
 		<h6 id="units">Total Units-128</h6>
-   <table class="table table-bordered" >
-		<thead>
-		<tr>
+	<table class="table table-responsive table-bordered">
+  <thead>
+    <tr>
 		<th>Size</th>
 		<th>Type</th>
 		<th>Flats</th>
+    </tr>
+  </thead>
+  <tbody>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
 		</tr>
-		</thead>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
+		</tr>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
+		</tr>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
+		</tr>
+  </tbody>
+</table>
 
-		<tbody>
-		<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-		<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-			<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-			
-			<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-		</tbody>
-	</table>
-  </div>
 </div>
 
 <!-- Content for building #4 -->
 <div  class="d-none" id="building4">
-	<div class="popover-body">
-		<h5 id="popover-heading">BLOCK D</h5>
+	<h5 id="popover-heading">BLOCK B</h5>
 		<h6 id="units">Total Units-128</h6>
-   <table class="table table-bordered" >
-		<thead>
-		<tr>
+	<table class="table table-responsive table-bordered">
+  <thead>
+    <tr>
 		<th>Size</th>
 		<th>Type</th>
 		<th>Flats</th>
+    </tr>
+  </thead>
+  <tbody>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
 		</tr>
-		</thead>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
+		</tr>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
+		</tr>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
+		</tr>
+  </tbody>
+</table>
 
-		<tbody>
-		<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-		<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-			
-			<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-		</tbody>
-	</table>
-  </div>
 </div>
 <!-- Content for building #5 -->
 <div  class="d-none" id="building5">
-	<div class="popover-body">
-		<h5 id="popover-heading">BLOCK E</h5>
+	<h5 id="popover-heading">BLOCK B</h5>
 		<h6 id="units">Total Units-128</h6>
-   <table class="table table-bordered" >
-		<thead>
-		<tr>
+	<table class="table table-responsive table-bordered">
+  <thead>
+    <tr>
 		<th>Size</th>
 		<th>Type</th>
 		<th>Flats</th>
+    </tr>
+  </thead>
+  <tbody>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
 		</tr>
-		</thead>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
+		</tr>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
+		</tr>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
+		</tr>
+  </tbody>
+</table>
 
-		<tbody>
-		<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-		<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-			
-			<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-			<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-		</tbody>
-	</table>
-  </div>
 </div>
 <!-- Content for building #6 -->
 <div  class="d-none" id="building6">
-	<div class="popover-body">
-		<h5 id="popover-heading">BLOCK F</h5>
+	<h5 id="popover-heading">BLOCK B</h5>
 		<h6 id="units">Total Units-128</h6>
-   <table class="table table-bordered" >
-		<thead>
-		<tr>
+	<table class="table table-responsive table-bordered">
+  <thead>
+    <tr>
 		<th>Size</th>
 		<th>Type</th>
 		<th>Flats</th>
+    </tr>
+  </thead>
+  <tbody>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
 		</tr>
-		</thead>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
+		</tr>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
+		</tr>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
+		</tr>
+  </tbody>
+</table>
 
-		<tbody>
-		<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-		<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-			<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-			
-			<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-		</tbody>
-	</table>
-  </div>
 </div>
 <!-- Content for building #7 -->
 <div  class="d-none" id="building7">
-	<div class="popover-body">
-		<h5 id="popover-heading">BLOCK G</h5>
+	<h5 id="popover-heading">BLOCK B</h5>
 		<h6 id="units">Total Units-128</h6>
-   <table class="table table-bordered" >
-		<thead>
-		<tr>
+	<table class="table table-responsive table-bordered">
+  <thead>
+    <tr>
 		<th>Size</th>
 		<th>Type</th>
 		<th>Flats</th>
+    </tr>
+  </thead>
+  <tbody>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
 		</tr>
-		</thead>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
+		</tr>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
+		</tr>
+		<tr>
+			 <td>1202 sft</td>
+			 <td>2BHK</td>
+			 <td>58</td>
+		</tr>
+  </tbody>
+</table>
 
-		<tbody>
-		<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-		<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-			<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-			
-			<tr>
-			  <td>1202 sft</td>
-			  <td>2BHK</td>
-			  <td>58</td>
-			</tr>
-		</tbody>
-	</table>
-  </div>
 </div>	
 <!-- large modal start-->
 <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Large Modal</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <h4 class="modal-title" id="myModalLabel">Filter</h4>
+        <button type="button" class="close-filter close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <h3>Modal Body</h3>
+       	<ul class="tabs1 tabs-left">
+							<li class="tab-link current" data-tab="tab-1"><i class="fa fa-home"></i>&nbsp;BHK</li>
+							<li class="tab-link" data-tab="tab-2"><i class="fa fa-rupee"></i>&nbsp;PRICE</li>
+							<li class="tab-link" data-tab="tab-3"><i class="fa fa-map-marker"></i>&nbsp;AREA</li>
+							<li class="tab-link" data-tab="tab-4"><i class="fa fa-compass"></i>&nbsp;DIRECTION</li>
+							<li class="tab-link" data-tab="tab-5"><i class="fa fa-tags"></i>&nbsp;Catagory</li>
+						</ul>
+
+						<div id="tab-1" class="tab-content current">
+						<div class="row">
+								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+									
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck1">
+													<label class="custom-control-label" for="customCheck1">2 BHK</label>
+											</div>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck2">
+													<label class="custom-control-label" for="customCheck2"> 3 BHK</label>
+											</div>
+									
+								</div>
+								
+								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck3">
+													<label class="custom-control-label" for="customCheck3">4 BHK</label>
+											</div>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck4">
+													<label class="custom-control-label" for="customCheck4">4 BHK GRAND</label>
+											</div>
+								</div>
+						</div>
+						</div>
+						<div id="tab-2" class="tab-content">
+							
+									
+						</div>	
+						<div id="tab-3" class="tab-content">
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</div>
+						<div id="tab-4" class="tab-content">
+							Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+						<div id="tab-5" class="tab-content">
+							Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">RESET</button>
+        <button type="button" class="btn btn-primary">APPLY</button>
       </div>
     </div>
   </div>
@@ -440,14 +472,29 @@
 
 </body>
 
+
 <script src="js/jquery.rwdImageMaps.min.js"></script>
 <script src="js/ios-orientationchange-fix.min.js"></script>
 <script src="js/popover.js"></script>
 <script>
+
+$(document).ready(function(){
+$('.tip').each(function () {
+	$(this).tooltip(
+	{
+		html: true,
+		title: $('#' + $(this).data('tip')).html()
+	});
+});
+ 
+
+});
+
 $('#slider').on('click', function(){
 //$('#dispPackages').slideToggle('slow')   this will set display:block   
 $('#demo').slideToggle('slow');
 $(".close-slider").toggle();
+
  //jQuery('.').css('opacity', '0.6');
 });
 
@@ -534,20 +581,73 @@ function drawRect(coOrdStr)
     hdc.strokeRect(left,top,right-left,bot-top); 
 }
 
+function myHover1(element)
+{
+	
+	var hoveredElement = element;
+	//console.log(element.id);
+	
+	//console.log(element.id.split("target")[0]);
+	//mousehover in block change color code
+	var e=element.id;
+	//document.getElementById(e).style.color = "#000";
+	//document.getElementById(e).style.background = "#fff";
+	 var $this = $(this);
+    $('.list-group').find('.active').removeClass('active');
+    $this.addClass('active');
+	//var id=$this.attr('id');
+    $("#"+e).css("background-color", "#ffffff");
+	$("#"+e).css("color", "#000");
+    console.log(e);
+	//mousehover in block change color code and popup action
+	var split=element.id.split("hover")[1];
+	
+    var coordStr = document.getElementById(split).getAttribute('coords');
+    var areaType = document.getElementById(split).getAttribute('shape');
+    switch (areaType)
+    {
+        case 'polygon':
+        case 'poly':
+            drawPoly(coordStr);
+            break;
 
+        case 'rect':
+            drawRect(coordStr);
+		
+		
+			
+    }
+}
+
+
+function myLeave1(element)
+{
+    var canvas = byId('myCanvas');
+    hdc.clearRect(0, 0, canvas.width, canvas.height);
+	var e=element.id;
+	//console.log(element.id);
+	document.getElementById(e).style.color = "#fff";
+	document.getElementById(e).style.background = "#ff6600";
+	
+	
+}
 
 
 //hover in map area
 function myHover(element)
 {
 
-		
 
-	//alert("Hover"+element.id);
-	$("#building"+element.id).css("background-color", "#ffffff");
-	$("#building"+element.id).css("color", "#000");
-	$('#building'+element.id).show();
-    var hoveredElement = element;
+	
+    var id= element.id;
+	//console.log(id);
+	var hover= "hover"+id;
+
+    $("#"+hover).css("background-color", "#ffffff");
+	$("#"+hover).css("color", "#000");
+
+
+	$("#"+hover).tooltip('show');
     var coordStr = element.getAttribute('coords');
     var areaType = element.getAttribute('shape');
 
@@ -565,12 +665,14 @@ function myHover(element)
 
 function myLeave(element)
 {
-	//alert(this.id);
+	 var id= element.id;
+	 var hover= "hover"+id;
     var canvas = byId('myCanvas');
     hdc.clearRect(0, 0, canvas.width, canvas.height);
-	$("#building"+element.id).css("background-color", "#FF6600");
-	$("#building"+element.id).css("color", "#fff");
-	$('#target'+element.id).hide();
+	 $("#"+hover).css("background-color", "#FF6600");
+	$("#"+hover).css("color", "#ffffff");
+	$("#"+hover).tooltip('hide');
+
 }
 
 function myInit()

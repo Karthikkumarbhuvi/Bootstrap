@@ -1,28 +1,73 @@
+/* Filter start */
+ul.tabs1{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		
+		}
+		ul.tabs1 li{
+			background: #ff5900;
+			color: #ffffff;
+			display: inline-block;
+			padding: 8px 15px 10px 10px ;
+			cursor: pointer;
+		}
 
-#popover-heading { 
-    background-color: #ff5900;
-	text-align:center;
-	color:#ffffff;
+		ul.tabs1 li.current{
+			background: #000000;
+			color: #ffffff;
+		}
+
+		.tab-content{
+			display: none;
+			background: #ffffff;
+			padding: 15px;
+			border:1px solid #000000;
+		}
+
+		.tab-content.current{
+			display: inherit;
+		}
+		.tab-link .fa{
+			font-size:30px;
+	
+		}
+		.close
+		{
+				color: #000000;
+				font-size: 2.5rem;
+				font-weight: 1000;
+				line-height: 1;
+		
+				border:1px solid  #ff5900;
+		}
+		 .btn-default{
+				color: #fff;
+				background-color: #ff5900;
+				border-color: #ff5900;
+		}
+		.btn-primary {
+				color: #fff;
+				background-color: #000000;
+				border-color: #000000;
+		}
+		
+	
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after{
+color:white;
+background-color:#ff5900;
+background-image:none;
+//border:1px solid #000000;
 }
-#units
-{ 
-    background-color: #E7E1DC;
-	text-align:center;
-	color:#000000;
-}
-
-th{
-background-color: #F8F4F0;	
-text-align:center;
-}
-
-html,body{height:100%;
- background-image: url("../img/bg.jpg");}
+/* Filter end */
 
 
- .hideMe {
-    display: none;
-}
+html,body{
+	height:100%;
+  background-image: url("../img/bg.jpg");
+  }
+
+
  .main-wrapper {
   height: 100vh; 
   padding:10px 10px 10px 10px  ;
@@ -34,14 +79,14 @@ pointer-events: none; /* make the canvas transparent to the mouse - needed since
 position: absolute;
 }
 .main-img{
-	width:100%;
-	height:100%;
+	width:96%;
+	height:96%;
 	background:-webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,128,128,1) 100%);
 	background:-o-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(128,128,128,1) 100%);
 	background:-moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(128,128,128,1) 100%);
 	background:linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(128,128,128,1) 100%);}
 }
-
+/* left side-list blocks  */
 .list-group
 {
 	position: relative;
@@ -52,77 +97,128 @@ position: absolute;
     line-height:100%;
     vertical-align: middle;
 	background:#FF6600;
-	color:#ffffff;
+
 	border: 1px solid #000000;
 	justify-content: center;
 	z-index:1;
+}
+
+.copy-right-txt{
+	color:#ffffff;
+	font-size:11px;
+	text-align:center;
+	padding:6px;
 }
 .list-group-item{ 
 	left:20px;
 	width: 60%;
 	height: 100%;
-    line-height:100%;
+    line-height:80%;
     vertical-align: middle;
 	background:#FF6600;
 	color:#ffffff;
 	border: 1px solid #000000;
 	justify-content: center;
-	z-index:1;
+	z-index:2;
 }
 
 .block{
 	color:#ffffff; 
 	font-size:28px;
-	z-index:2;
+	z-index:3;
 	top:100px;
 	position:relative;
 	transform: rotate(-90deg);
 
 }
+.tooltip-inner {
+  background-color: #ffffff !important;
+  color: #fffff;
+  max-width: 100%;
+  width: 100%;
+  height:100%;
+}
 
 
+.tooltip.bs-tooltip-auto[x-placement^=right] .arrow::before, .tooltip.bs-tooltip-right .arrow::before {
 
-.carousel-inner img {
-      width: 100%;
-      height: 100%;
-  }
-
+	border-right-color: #ffffff;
+}
+#popover-heading{
+	background-color:#ff5900;
+	color:#ffffff;
+	
+}
+ #units
+ {
+	background-color:#D4C9C6  ;
+	color:#000000;
+}
+.table th{
+	background-color:#FA965C ; 
+	
+ }
+ .table td{
+	background-color:#ffffff; 
+	color:#000000;
+	
+ }
 .inside img {
 	position:relative;
-	width:60px;
-	height:60px;
+	width:50px;
+	height:50px;
 	margin-bottom: 10px;
 	margin-left: 20px;
 	margin-right: 15px;
-	z-index:3;
+	z-index:4;
 	
 }
-
-
-.inside1 img {
-	position:relative;
-	width:60px;
-	height:60px;
+.inside1 i {
+	  position:absolute;
+	  font-size: 31px;
+	  bottom:19%;
+	  right:7%;
 	
-	z-index:3;
-	
+	 color:#ffffff;
+	 z-index:10;
+	 border-radius: 50%;
+	 width: 50px;
+     height: 50px;
+	 background: #FF6600;
+	 text-align: center;
+	 line-height: 52px;
 }
-.carousel-indicators{
+/* left side-list blocks  */
+/* Focuz logo   */
+.Focuz-logo{
+  background-color:#ffffff;
+  position:absolute;
+  width:120px;
+  height:55px;
+  right:5%;
+  bottom:4%;
+  text-align: center;
+
+}	
+.Focuz-logo .Focuz {
+				padding:5px;
+				display: inline-block;
+				max-width: 100%;
+				height: auto;
+				width: 80%;
+				margin: auto;
+			}
+/* Focuz logo   */
+/*.carousel-indicators{
 		position:absolute;
-		bottom: 10%;
-}
+		bottom: 15%;
+}*/
 
-.carousel-inner{
-	position:absolute;
-	top:5%;
-    bottom: 5%;
+/* slider start   */
+.carousel-item img {
 
- }
- 
- .carousel-item img {
-
-height: auto;
-max-width: 100%;
+height: 100%;
+width: 100%;
 vertical-align: middle;
 border: 0;	
 }
@@ -131,37 +227,84 @@ border: 0;
 	background-color:#ff5900;
 }
 
-.close-slider:hover {
-  opacity: 1;
-}
-.close-slider:before, .close-slider:after {
-  position: absolute;
-  top:10px;
-  right: 80px;
-  content: ' ';
-  height: 33px;
-  width: 2px;
-  background-color: #ff5900;
-}
-.close-slider:before {
-  transform: rotate(45deg);
-}
-.close-slider:after {
-  transform: rotate(-45deg);
-}
+
 
 #demo{
-	
-	z-index:10;
+	z-index:6;
 	position:absolute;
 	top:0;
     bottom:0;
-    left: 0;
-    right: 0;
+    left: 10%;
+    right: 10%;
 
 }
 
+ 
 
+
+
+
+.is-blurred {
+position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+	width:100%;
+	height:100%;
+  display: block;
+  background-color: #000000;
+
+
+  -webkit-filter: blur(50px);
+  -moz-filter: blur(50px);
+  -o-filter: blur(50px);
+  -ms-filter: blur(50px);
+  filter: blur(50px);
+	}
+
+
+
+
+/* Overlay */
+.Modal {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 7;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.5s;
+  overflow: auto;
+  transition: all 0.3s linear; }
+
+  .ModalOpen {
+    overflow: hidden; }
+
+.is-hidden {
+  display: none; }
+
+.is-visuallyHidden {
+  opacity: 0; }
+
+/* The Close Button */
+.Close {
+  z-index:9;
+  color: #ff5900;
+  float: right;
+  font-size: 45px;
+  position:absolute;
+  right:80px;
+  }
+
+.Close:hover,
+.Close:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer; }
+/* slider end   */
 
 @media only screen and (max-width: 1200px){
 
@@ -169,12 +312,20 @@ border: 0;
 	left:15px;
 	width: 50%;
 	height: 100%;
-	font-size: 14px;}
+	font-size: 14px;
+	 line-height:80%;
+	}
 .list-group
 {
   justify-content: center;
   padding:10px 10px;
   position: relative;
+}
+.copy-right-txt{
+	color:#ffffff;
+	font-size:11px;
+	text-align:center;
+	padding:4px;
 }
 .block{
 
@@ -182,34 +333,79 @@ border: 0;
 	top:40px;
 }
 
-.div1 .inside {
-	width:60px;
-	height:60px;
-	position: absolute;
-	bottom: 30px;
+.inside img {
+	width:45px;
+	height:45px;
+
+}
+
+.tooltip-inner {
+  background-color: #ffffff !important;
+  color: #fffff;
+  max-width: 100%;
+  width: 100%;
+  height:100%;
+}
+#popover-heading{
+	font-size:18px;
 	
 }
-
-.inside img {
-	width:50px;
-	height:50px;
-
+ #units
+ {
+	font-size:12px;
 }
-.filter a {
-  display: inline-block;
-  padding:8px 8px 8px 8px;
-  border: 2px solid #FF5900;
-  position: relative;
-  margin-left:7px;
-  margin-right: 7px;
-  margin-bottom: 7px;
-}
-.close-slider:before, .close-slider:after {
-  position: absolute;
-  top:10px;
-  right: 30px;
-
+.table th{
+	font-size:12px; 
  }
+ .table td{
+	font-size:12px; 
+ }
+.inside1 i {
+	 font-size: 25px;
+	 right:7%;
+	 border-radius: 50%;
+	 width: 40px;
+     height: 40px;
+	 background: #FF6600;
+	 line-height: 42px;
+}
+#demo{
+	z-index:6;
+	position:absolute;
+	top:0;
+    bottom:0;
+    left: 7%;
+    right: 7%;
+
+}
+.carousel-indicators{
+		position:absolute;
+		bottom: 15%;
+}
+.Close {
+	font-size: 40px;
+	right:60px;
+}
+.Focuz-logo{
+  background-color:#ffffff;
+  position:absolute;
+  width:100px;
+  height:48px;
+  right:5%;
+  bottom:4%;
+  text-align: center;
+
+}	
+.Focuz-logo .Focuz {
+				padding:5px;
+				display: inline-block;
+				max-width: 100%;
+				height: auto;
+				width: 80%;
+				margin: auto;
+			}
+
+}
  @media only screen and (max-width: 992px){
 
 .list-group-item{
@@ -217,12 +413,20 @@ border: 0;
 	width: 25%;
 	height: 100%;
 	font-size: 11px;
+	line-height:60%;
+	left:0px;
 }
 .list-group
 {
   justify-content: center;
   padding:0px 0px;
   position: relative;
+}
+.copy-right-txt{
+	color:#ffffff;
+	font-size:10px;
+	text-align:center;
+	padding:3px;
 }
 .block{
 	position:relative;
@@ -238,28 +442,90 @@ border: 0;
 	
 }
 
+
+#demo{
+	z-index:6;
+	position:absolute;
+	top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+
+}
+
 .inside img {
 	width:40px;
 	height:40px;
 
 }
-.close-slider:before, .close-slider:after {
-  position: absolute;
-  top:10px;
-  right: 20px;
-  height: 25px;
-  width: 2px;
-
+.tooltip-inner {
+  background-color: #ffffff !important;
+  color: #fffff;
+  max-width: 220px;
+  width: 220px;
+  height:auto;
+}
+#popover-heading{
+	font-size:16px;
+	
+}
+ #units
+ {
+	font-size:11px;
+}
+.table th{
+	font-size:11px; 
  }
-
+ .table td{
+	font-size:11px; 
  }
+.carousel-indicators{
+		position:absolute;
+		bottom: 10%;
+}
+.Close {
+	 font-size: 35px;
+	position:absolute;
+	right:35px;
+}
+.inside1 i {
+	 font-size: 25px;
+	 right:8%;
+	 border-radius: 50%;
+	 width: 35px;
+     height: 35px;
+	 background: #FF6600;
+	 line-height: 37px;
+}
+.Focuz-logo{
+  background-color:#ffffff;
+  position:absolute;
+  width:80px;
+  height:40px;
+  right:6%;
+  bottom:4%;
+  text-align: center;
+
+}	
+.Focuz-logo .Focuz {
+				padding:5px;
+				display: inline-block;
+				max-width: 100%;
+				height: auto;
+				width: 80%;
+				margin: auto;
+			}
+
+}
+
+
+ 
  @media only screen and (max-width: 768px){
 
 .list-group-item{
-	left:3px;
-	width: 20%;
-	height: 10%;
+	 top:10%;
 	font-size: 9px;
+	 line-height:50%;
 
  }
  
@@ -269,11 +535,17 @@ border: 0;
   padding:0px 0px;
   position: relative;
 }
+.copy-right-txt{
+	color:#ffffff;
+	font-size:9px;
+	text-align:center;
+	padding:2px;
+}
 .block{
-	left:8px;
+	left:10px;
 	position:relative;
 	font-size:19px;
-	top:50px;
+	top:70%;
 }
 
 .div1 .inside {
@@ -286,23 +558,92 @@ border: 0;
 	height:35px;
 
 }
-.close-slider:before, .close-slider:after {
-	position: absolute;
-	top:10px;
-	right: 20px;
-    height: 20px;
-    width: 2px;
-
+.tooltip-inner {
+  background-color: #ffffff !important;
+  color: #fffff;
+  max-width: 100%;
+  width: 100%;
+  height:auto;
+}
+#popover-heading{
+	font-size:10px;
+	
+}
+.table{
+	 max-width: 100%;
+     width: 100%;
+     height:auto;
+}
+#units
+ {
+	font-size:10px;
+}
+.table th{
+	font-size:4px; 
  }
+ .table td{
+	font-size:4px; 
+ }
+
+
+
+.inside1 i {
+	 font-size: 23px;
+	 color:#ffffff;
+	 border-radius: 50%;
+	 right:8%;
+	 width: 30px;
+     height: 30px;
+	 background: #FF6600;
+	 line-height: 32px;
+}
+.carousel-indicators{
+		position:absolute;
+		bottom: 10%;
+}
+#demo{
+	z-index:6;
+	position:absolute;
+	top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+
+}
+.Close {
+	 font-size: 30px;
+	position:absolute;
+	right:20px;
+}
+.Focuz-logo{
+  background-color:#ffffff;
+  position:absolute;
+  width:60px;
+  height:32px;
+  right:6%;
+  bottom:4%;
+  text-align: center;
+
+}	
+.Focuz-logo .Focuz {
+				padding:5px;
+				display: inline-block;
+				max-width: 100%;
+				height: auto;
+				width: 80%;
+				margin: auto;
+			}
+
 
  }
  @media only screen and (max-width: 576px){
 
 .list-group-item{
-
-	width: 20%;
-	height: 10%;
+	line-height:40%;
+	width: 15%;
+	height: 5%;
 	font-size:9px;
+	top:10%;
 	
 }
 
@@ -313,16 +654,22 @@ border: 0;
   position: relative;
 }
 
+.copy-right-txt{
+	color:#ffffff;
+	font-size:8px;
+	text-align:center;
+	padding:3px;
+}
 .block{
-	left:15px;
+	left:70%;
 	position:relative;
-	font-size:16px;
-	top:40px;
+	font-size:13px;
+	bottom:30%;
 }
 
 .inside {
-	width:30px;
-	height:30px;
+	width:20px;
+	height:20px;
 	position: absolute;
 
 	
@@ -330,19 +677,86 @@ border: 0;
 
 .inside img {
 
-	width:30px;
-	height:30px;
+	width:20px;
+	height:20px;
+
+}
+.tooltip-inner {
+  background-color: #ffffff !important;
+  color: #fffff;
+  max-width: 100%;
+  width: 100%;
+  height:auto;
+}
+#popover-heading{
+	font-size:10px;
+	
+}
+.table{
+	 max-width: 100%;
+     width: 100%;
+     height:auto;
+}
+#units
+ {
+	font-size:10px;
+}
+.table th{
+	font-size:4px; 
+ }
+ .table td{
+	font-size:4px; 
+ }
+.inside1 i {
+	 font-size: 20px;
+	 color:#ffffff;
+	 z-index:10;
+	 border-radius: 50%;
+	 width: 25px;
+     height: 25px;
+	 background: #FF6600;
+	 text-align: center;
+	 line-height: 27px;
+}
+.carousel-indicators{
+		position:absolute;
+		bottom: 10%;
+}
+#demo{
+	z-index:6;
+	position:absolute;
+	top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
 
 }
 
-.close-slider:before, .close-slider:after {
-  position: absolute;
-  top:4px;
-  right: 5px;
+.Close {
+	 font-size: 20px;
+	position:absolute;
+	right:10px;
+}
+.Focuz-logo{
+  background-color:#ffffff;
+  position:absolute;
+  width:40px;
+  height:24px;
+  right:7%;
+  bottom:4%;
+  text-align: center;
 
- }
+}	
+.Focuz-logo .Focuz {
+				padding:5px;
+				display: inline-block;
+				max-width: 100%;
+				height: auto;
+				width: 80%;
+				margin: auto;
+			}
 
-	
+}
 }
 
 
